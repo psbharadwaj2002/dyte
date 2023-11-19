@@ -85,9 +85,13 @@
 }
 
 .footer {
-    text-align: center;
+
     color: gray;
     font-size: 13px;
     position: relative;
     bottom: 5px;
+
+    p {
+        text-align: center;
+    }
 }
