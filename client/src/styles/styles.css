@@ -1,0 +1,74 @@
+.App h1,
+.App h2 {
+  text-align: center;
+  color: #8C61C0;
+}
+.App h1 {
+  margin-top: 10px;
+}
+
+.Display {
+  margin-top: 20px;
+  padding: 20px;
+}
+.Display h3 {
+  text-align: center;
+  margin: 10px 0px;
+}
+.Display .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.Display .inputs input {
+  width: 200px;
+  outline: none;
+  height: 25px;
+  padding-left: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.Display .display {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.Display .display .noDataDiv {
+  width: 100%;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Display .display .show {
+  width: 330px;
+  background-color: #2C2C2C;
+  border-radius: 10px;
+  color: #DADADA;
+}
+.Display .display .show div {
+  display: flex;
+  padding: 15px;
+}
+.Display .display .show div .sideHeading {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.Display .display .show div span:not(.sideHeading) {
+  padding-right: 10px;
+}
+.Display .display::after {
+  width: 330px;
+  content: "";
+  height: 1px;
+}
+
+.footer {
+  text-align: center;
+  color: gray;
+  font-size: 13px;
+  position: relative;
+  bottom: 5px;
+}/*# sourceMappingURL=styles.css.map */
