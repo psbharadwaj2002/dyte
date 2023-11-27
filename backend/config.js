@@ -1,6 +1,6 @@
+require("dotenv").config();
 const PORT = 3000;
-const MONGO_URL =
-  "mongodb+srv://dyte_root:dyte_root@dyte-task.6zjpelt.mongodb.net/logs?retryWrites=true&w=majority";
+const MONGO_URL = process.env.MONGO_DB_URL;
 
 const errMessage = (type) => {
   console.log(
