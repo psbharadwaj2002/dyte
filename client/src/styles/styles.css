@@ -18,8 +18,9 @@
 .Display .inputs {
   display: flex;
   flex-wrap: wrap;
+  max-width: 900px;
   gap: 10px;
-  margin-top: 10px;
+  margin: 10px auto 20px;
 }
 .Display .inputs input {
   width: 200px;
