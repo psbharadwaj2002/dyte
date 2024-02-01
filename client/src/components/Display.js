@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/styles.css";
+import { Link } from "react-router-dom";
 
 function Display() {
   const [data, setData] = useState([]);
@@ -110,7 +111,14 @@ function Display() {
       {/* Here the data is displayed */}
       {/* display class shows call the data and div which contains class show is individual log */}
       {/* Button for log interface */}
-      <button className="button">Log Interface</button>
+      <button className="button">
+        <Link
+          to="/log-ingestor"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          Log Ingestor
+        </Link>
+      </button>
       <h3 style={{ marginTop: "20px" }}>Results</h3>
       <div className="display">
         {filteredData.length === 0 ? (

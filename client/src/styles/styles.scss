@@ -47,6 +47,7 @@
         border-radius: 10px;
         border: none;
         cursor: pointer;
+        background-color: gold;
     }
 
 
@@ -106,5 +107,55 @@
 
     p {
         text-align: center;
+    }
+}
+
+.Ingestor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        margin: 30px 0px;
+    }
+
+    .button {
+        padding: 5px 10px;
+        margin: 0px auto;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        background-color: gold;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            label {
+                width: 150px;
+            }
+
+            span {
+                width: 20px;
+            }
+
+            input {
+                width: 200px;
+                padding: 5px 10px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+            }
+        }
+
     }
 }
