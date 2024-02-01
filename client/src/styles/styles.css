@@ -33,7 +33,7 @@
   border-radius: 10px;
 }
 .Display .button {
-  padding: 5px 10px;
+  padding: 6px 20px;
   margin: 0px auto;
   border-radius: 10px;
   border: none;
@@ -97,31 +97,37 @@
   margin: 30px 0px;
 }
 .Ingestor .button {
-  padding: 5px 10px;
+  padding: 6px 20px;
   margin: 0px auto;
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: gold;
 }
-.Ingestor .inputs {
+.Ingestor form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.Ingestor .inputs div {
+.Ingestor form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.Ingestor form .inputs div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.Ingestor .inputs div label {
+.Ingestor form .inputs div label {
   width: 150px;
 }
-.Ingestor .inputs div span {
+.Ingestor form .inputs div span {
   width: 20px;
 }
-.Ingestor .inputs div input {
+.Ingestor form .inputs div input {
   width: 200px;
   padding: 5px 10px;
   border-radius: 10px;
