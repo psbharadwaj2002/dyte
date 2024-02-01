@@ -32,13 +32,16 @@ function Ingestor() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/ingestLogs", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(logData),
-      });
+      const res = await fetch(
+        "https://logingestor-queryinterface-lt6k.onrender.com/ingestLogs",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(logData),
+        }
+      );
 
       if (res.ok) {
         setLogData({

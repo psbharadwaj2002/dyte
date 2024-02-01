@@ -17,7 +17,7 @@ function Display() {
   });
 
   useEffect(() => {
-    fetch(`http://localhost:3000/getLogs`)
+    fetch(`https://logingestor-queryinterface-lt6k.onrender.com/getLogs`)
       .then((res) => res.json())
       .then((data) => {
         setData(data.data);
