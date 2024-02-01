@@ -1,4 +1,7 @@
-require("dotenv").config();
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const PORT = 3000;
 const MONGO_URL = process.env.MONGO_DB_URL;
 
