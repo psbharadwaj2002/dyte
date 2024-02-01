@@ -10,6 +10,8 @@
 .Display {
   margin-top: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .Display h3 {
   text-align: center;
@@ -29,6 +31,13 @@
   padding-left: 10px;
   border: 2px solid grey;
   border-radius: 10px;
+}
+.Display .button {
+  padding: 5px 10px;
+  margin: 0px auto;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 .Display .display {
   display: flex;

@@ -1,20 +1,17 @@
-import Display from "./components/Display";
-import Footer from "./components/Footer";
+import Ingestor from "./screens/Ingestor";
+import Query from "./screens/Query";
 import "./styles/styles.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <br />
-        <h2>Log Ingestor and Query Interface</h2>
-      </header>
-      <div>
-        <Display />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Query />} />
+          <Route path="/log-ingestor" element={<Ingestor />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

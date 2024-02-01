@@ -109,7 +109,9 @@ function Display() {
       </div>
       {/* Here the data is displayed */}
       {/* display class shows call the data and div which contains class show is individual log */}
-      <h3>Results</h3>
+      {/* Button for log interface */}
+      <button className="button">Log Interface</button>
+      <h3 style={{ marginTop: "20px" }}>Results</h3>
       <div className="display">
         {filteredData.length === 0 ? (
           <div className="noDataDiv">
